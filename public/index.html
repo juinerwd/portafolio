@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juiner Garcia - Portafolio Personal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- ###### HEADER -->
+    <header>
+        <!-- ###### Contenedor del Header -->
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 colum-header">
+                        <!-- Logo -->
+                        <div id="logo">
+                            <a href="#">
+                                <img src="../assets/img/logo1.png" alt="">
+                            </a>
+                        </div>
+                        <!-- ### Boton para mostrar el menu cuando esta en una pantalla mas pequeña -->
+                        <span id="mostrarMenu" onclick="openNav()">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <!-- Menu de navegación -->
+                        <nav class="navegacion" id="Navegacion">
+                            <ul id="menu">
+                                <!-- Boton para cerrar el menu -->
+                                <li class="btnclose" onclick="closeNav()">
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#About">Acerca de</a></li>
+                                <li><a href="#portfolio">Portafolio</a></li>
+                                <li><a href="#Services">Servicios</a></li>
+                                <li><a href="#">Experiencia</a></li>
+                                <li><a href="#contact">Contactame</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fondo del header -->
+        <div class="container overlay-bg">
+            <div class="row align-items-center">
+                <div class="col-7 d-flex justify-content-center pr-0 pl-0">
+                    <div class="saludo">
+                        <h1>Hola, Soy Juiner Solis <br> Un Desarrollador Full Stack</h1>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-center">
+                    <div class="border-fuera">
+                        <img class="my-photo" src="../assets/img/demi/mi-foto.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin fondo del header -->
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección sobre mi -->
+        <section class="about" id="About">
+            <div class="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="d-none d-lg-block col-lg-5 pr-0 pl-0">
+                            <img class="img-about" src="../assets/img/coding.jpg" alt="">
+                        </div>
+                        <div class="col-sm-12 col-lg-7 pt-5 pt-5 pb-5 pl-4">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eveniet molestias qui, voluptatibus temporibus atque et sed eos, magnam veritatis alias, deserunt nisi ipsam doloremque ex consectetur. Quod, eius veritatis!</p>
+                                    <div class="competencias">
+                                        <div class="progress-comp design">
+                                            <h6>Diseño</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-comp design">
+                                            <h6>HTML5</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-comp design">
+                                            <h6>CSS3</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-comp design">
+                                            <h6>Bootstrap</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-comp design">
+                                            <h6>Fotografo</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <h2 class="about-title">Acerca de mi</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="btn-contrato" href="#">Contratarme</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de mi portafolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container-fluid pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h2>Mi Portafolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <nav class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Todo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Item 1</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="gallery-portfolio">
+                            <div class="gallery-items">
+                                <a href="#img1">
+                                    <img class="gallery-img" src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="gallery-items">
+                                <a href="#img2">
+                                    <img class="gallery-img" src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="gallery-items">
+                                <a href="#img3">
+                                    <img class="gallery-img" src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="gallery-items">
+                                <a href="#img4">
+                                    <img class="gallery-img" src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="gallery-items">
+                                <a href="#img5">
+                                    <img class="gallery-img" src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="gallery-items">
+                                <a href="#img6">
+                                    <img class="gallery-img" src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-box" id="img1">
+                            <img src="../assets/img/portafolio/computer-1209641_1920.jpg" alt="">
+                            <a href="#" class="close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de servicios -->
+        <section class="services parallax-window pb-5" data-parallax="scroll" data-image-src="../assets/img/coding.jpg" id="Services">
+            <div class="container pt-5 pb-5">
+                <div class="row pb-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h2>Servicios</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="carousel" id="slick-list">
+                            <div class="carousel-contenedor">
+                                <button aria-label="Anterior" class="carousel-anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="carousel-lista">
+                                    <div class="carousel-elemento">
+                                        <div class="card-services">
+                                            <div>
+                                                <i class="fal fa-phone-laptop"></i>
+                                                <h5>Diseño Web</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-elemento">
+                                        <div class="card-services">
+                                            <div>
+                                                <i class="fal fa-phone-laptop"></i>
+                                                <h5>Diseño Web</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-elemento">
+                                        <div class="card-services">
+                                            <div>
+                                                <i class="fal fa-phone-laptop"></i>
+                                                <h5>Diseño Web</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-elemento">
+                                        <div class="card-services">
+                                            <div>
+                                                <i class="fal fa-phone-laptop"></i>
+                                                <h5>Diseño Web</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-elemento">
+                                        <div class="card-services">
+                                            <div>
+                                                <i class="fal fa-phone-laptop"></i>
+                                                <h5>Diseño Web</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-elemento">
+                                        <div class="card-services">
+                                            <div>
+                                                <i class="fal fa-phone-laptop"></i>
+                                                <h5>Diseño Web</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button aria-label="Siguiente" class="carousel-siguiente">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div role="tablist" class="carousel-indicadores mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de contacto -->
+        <section class="contact" id="contact">
+            <div class="container pt-5 pb-5">
+                <div class="row pb-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h2>Contactame Ahora</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                    </div>
+                    <div class="col-sm12 col-md-7">
+                        <form>
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" name="" id="" placeholder="Nombre">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="email" name="" id="" placeholder="Correo eletronico">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" name="" id="" placeholder="Teléfono">
+                            </div>
+                            <div class="input-group mb-3">
+                                <textarea class="form-control" name="" id="" rows="5" placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="btn-submit">
+                                <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Fin del contenido principal -->
+
+    <!-- Sección del pie de pagina -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3 d-flex justify-content-center justify-content-lg-start align-items-center">
+                    <div>
+                        <h6>Juiner Solis Garcia</h6>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 d-flex justify-content-center justify-content-lg-center align-items-center">
+                    <div>
+                        <p class="mb-0">© Copyright 2020 - Profession by JuinerWD</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end align-items-center">
+                    <div class="red-social">
+                        <div class="icon icon-facebook">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="icon icon-instagram">
+                            <a href="https://www.instagram.com/juiner.wd/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="icon icon-twitter">
+                            <a href="https://twitter.com/GarciaJuiner" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ### Scripts ### -->
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script>
+        $('.parallax-window').parallax({imageSrc: '../assets/img/coding.jpg'});
+        $('header').parallax({imageSrc: '../assets/img/clouds.jpg'});
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

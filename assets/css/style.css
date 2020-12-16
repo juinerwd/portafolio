@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F3F3;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ##################### */
+/*      Styles Header    */
+header {
+    height: 100vh;
+}
+
+.content-header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .1);
+}
+.navegacion {
+    display: flex;
+    align-items: center;
+    /* background-color: tomato; */
+}
+.navegacion #menu {
+    margin-bottom: 0px;
+}
+.colum-header{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+div#logo a img{
+    width: 180px;
+}
+
+.overlay-bg, .overlay-bg>.row{
+    height: 85%;
+}
+.border-fuera {
+    display: inline-block;
+    position: relative;
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.my-photo{
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+
+}
+.saludo h1 {
+    color: #fff;
+}
+
+
+
+/* ####################### */
+/* #### Section About #### */
+.competencias {
+    width: 400px;
+}
+.img-about {
+    width: 100%;
+}
+.progress-comp {
+    padding-bottom: 15px;
+}
+.about-title {
+    writing-mode: vertical-lr;
+}
+/* #### Fin Section About #### */
+/* ########################### */
+
+/* ########################### */
+/* #### Section portfolio #### */
+#portfolio{
+    background-color: #F3F7FD;
+}
+
+.gallery-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.gallery-items a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-items a img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.gallery-items a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    background-color: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+}
+.modal-box img{
+    width: 75vw;
+    max-height: 80vh;
+}
+.modal-box:target{
+    transform: scale(1);
+}
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+.close i{
+    font-size: 30px;
+}
+/* #### Fin Section portfolio #### */
+/* ############################### */
+
+/* ########################## */
+/* #### Section Services #### */
+.services h2, .card-services{
+    color: #ffffff;
+}
+
+.contenedor{
+    max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+
+.card-services {
+    width: 370px;
+    height: 350px;
+    display: flex;
+    padding: 0px 15px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card-services i{
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.card-services h5 {
+    margin-bottom: 20px;
+}
+
+/* Carousel */
+.carousel-contenedor{
+    position: relative;
+}
+.carousel-anterior, .carousel-siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #ffffff;
+    opacity: 20%;
+}
+.carousel-anterior:hover, .carousel-siguiente:hover{
+    opacity: 100%;
+}
+.carousel-anterior{
+    left: -30px;
+}
+.carousel-siguiente{
+    right: -30px;
+}
+.carousel-lista{
+    overflow: hidden;
+}
+.carousel-indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    opacity: .2;
+    border-radius: 0;
+}
+.carousel-indicadores .glider-dot:hover{
+    opacity: .5;
+}
+.carousel-indicadores .glider-dot.active{
+    opacity: 1;
+}
+/* #### Fin Section Services #### */
+/* ############################## */
+
+/* ######################### */
+/* #### Section Contact #### */
+/* .contact{
+
+} */
+.btn-submit {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-submit button{
+    width: 250px;
+    height: 50px;
+    color: #0B5ED7;
+    border-radius: 0%;
+    border: solid 1px #0B5ED7;
+    background-color: transparent;
+}
+/* #### Fin Section Contact #### */
+/* ############################# */
+
+
+/* ######################## */
+/* #### Section Footer #### */
+footer {
+    color: #ffffff;
+    padding: 30px 0px;
+    background-color: #000000;
+}
+.red-social .icon{
+    display: inline-block;
+}
+.red-social .icon a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    text-decoration: none;
+    border: solid 1px #ffffff;
+}
+.red-social .icon a:hover{
+    border: solid 1px #0B5ED7;
+    background-color: #0B5ED7;
+}
+.red-social .icon a i{
+    color: #ffffff;
+    font-size: 20px;
+}
+/* #### Fin Section Footer #### */
+/* ############################ */
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+/* ########  Media Queries  ######## */
+
+/* Estos estilos se aplican cunado la pantala tenga un ancho minimo de 992px */
+@media screen and (min-width: 992px){
+    #mostrarMenu, .btnclose{
+        display: none !important; /* Ocultamos los botones */
+    }
+    nav ul#menu li {
+        margin-left: 10px;
+        display: inline-block;
+    }
+    nav ul#menu li:first-child{
+        margin-left: 0px;
+    }
+    nav ul#menu li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Footer */
+    /* .columna-footer div{
+    } */
+}
+/* Estos estilos se aplican cunado la pantala tenga un ancho maximo de 991px */
+@media screen and (max-width: 991px){
+    #Navegacion{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul#menu li {
+        margin-left: 10px;
+        display: inline;
+    }
+    nav ul#menu li:first-child{
+        margin-left: 0px;
+    }
+    nav ul#menu li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #mostrarMenu{
+        width: 40px;
+        height: 40px;
+        display: block;
+        cursor: pointer;
+        color: #ffffff;
+    }
+    #mostrarMenu i{
+        font-size: 30px;
+    }
+    .navegacion{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+    }
+    .navegacion #menu li a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .navegacion #menu li a:hover{
+        color: #f1f1f1;
+    }
+
+    .navegacion #menu li.btnclose {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+        color: #ffffff;
+    }
+      
+}
+@media screen and (max-width: 1199px){
+    .card-services {
+        width: 300px;
+        height: 350px;
+        display: flex;
+        padding: 0px 15px;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+
