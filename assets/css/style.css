@@ -33,6 +33,17 @@ header {
 .navegacion #menu li a{
     color: inherit;
 }
+nav ul#menu li {
+    margin-left: 10px;
+    display: inline-block;
+}
+nav ul#menu li:first-child{
+    margin-left: 0px;
+}
+nav ul#menu li a{
+    color: #fff;
+    text-decoration: none;
+}
 .colum-header{
     display: inline-block;
     display: flex;
@@ -192,6 +203,20 @@ div#logo a img{
 }
 .close i{
     font-size: 30px;
+}
+.anterior, .siguiente{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.anterior{
+    margin-right: 15px;
+}
+.siguiente{
+    margin-left: 15px;
 }
 /* #### Fin Section portfolio #### */
 /* ############################### */
@@ -363,18 +388,6 @@ footer {
     #mostrarMenu, .btnclose{
         display: none !important; /* Ocultamos los botones */
     }
-    nav ul#menu li {
-        margin-left: 10px;
-        display: inline-block;
-    }
-    nav ul#menu li:first-child{
-        margin-left: 0px;
-    }
-    nav ul#menu li a{
-        color: #fff;
-        text-decoration: none;
-    }
-
     /* Footer */
     /* .columna-footer div{
     } */
@@ -382,6 +395,17 @@ footer {
 /* Estos estilos se aplican cunado la pantala tenga un ancho maximo de 991px */
 @media screen and (max-width: 991px){
     #Navegacion{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
         display: flex;
         justify-content: center;
     }
@@ -408,19 +432,6 @@ footer {
     #mostrarMenu i{
         font-size: 30px;
         margin: auto;
-    }
-    .navegacion{
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        text-align:center;
     }
     .navegacion #menu li a{
         padding: 8px 8px 8px 32px;
