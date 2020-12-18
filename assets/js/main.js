@@ -5,14 +5,6 @@ function closeNav() {
     document.getElementById("Navegacion").style.width = "0";
 }
 
-/* var size = {
-  width: window.innerWidth || document.body.clientWidth,
-  height: window.innerHeight || document.body.clientHeight
-}
-if (size.width > 300) {
-  
-} */
-
 window.onscroll = function() {
     scrollFunction()
   };
