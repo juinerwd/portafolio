@@ -1,9 +1,17 @@
-function openNav() {
+const botonNav = document.getElementById("mostrarMenu");
+const cerrarNav = document.querySelector(".btnclose");
+botonNav.addEventListener('click', function(){
+  document.getElementById("Navegacion").classList.toggle('mostrarNav');
+});
+cerrarNav.addEventListener('click', function(){
+  document.getElementById("Navegacion").classList.toggle('mostrarNav');
+});
+/* function openNav() {
     document.getElementById("Navegacion").style.width = "100%";
 }
 function closeNav() {
     document.getElementById("Navegacion").style.width = "0";
-}
+} */
 
 window.onscroll = function() {
     scrollFunction()
