@@ -25,7 +25,6 @@ header {
 .navegacion {
     display: flex;
     align-items: center;
-    /* background-color: tomato; */
 }
 .navegacion #menu {
     margin-bottom: 0px;
@@ -386,12 +385,12 @@ footer {
     #mostrarMenu, .btnclose{
         display: none !important; /* Ocultamos los botones */
     }
-    /* Footer */
-    /* .columna-footer div{
-    } */
 }
 /* Estos estilos se aplican cunado la pantala tenga un ancho maximo de 991px */
 @media screen and (max-width: 991px){
+    #Navegacion.mostrarNav{
+        width: 100%;
+    }
     #Navegacion{
         height: 100%;
         width: 0;
@@ -406,6 +405,9 @@ footer {
         text-align:center;
         display: flex;
         justify-content: center;
+    }
+    #Navegacion.mostrarNavbar{
+        width: 100%;
     }
     nav ul#menu li {
         margin-left: 10px;
