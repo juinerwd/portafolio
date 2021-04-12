@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow: hidden;
     background-color: #F3F3F3;
     font-family: 'JetBrains Mono', monospace;
 }
@@ -147,10 +148,11 @@ div#logo a img{
 .gallery-portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
+    width: 100%;
+    height: 100vh;
     margin: auto;
     grid-gap: 10px;
-    padding: 40px 0;
+    padding: 20px 0;
     overflow: hidden;
 }
 .gallery-items a {
@@ -159,7 +161,7 @@ div#logo a img{
     overflow: hidden;
 }
 .gallery-items a img{
-    width: 100%;
+    width: 90%;
     vertical-align: top;
     height: 300px;
     object-fit: cover;
