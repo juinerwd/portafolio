@@ -6,9 +6,23 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #F3F3F3;
     font-family: 'JetBrains Mono', monospace;
+}
+/* Tamaño del scroll */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+ /* Estilos barra (thumb) de scroll */
+body::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+ /* Estilos track de scroll */
+body::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
 }
 
 /* ##################### */
