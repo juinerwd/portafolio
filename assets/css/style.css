@@ -169,70 +169,45 @@ div#logo a img{
     padding: 20px 0;
     overflow: hidden;
 }
-.gallery-items a {
-    display: block;
-    position: relative;
-    overflow: hidden;
+/*  NEW BTN MODAL */
+.gallery-items .btn-modal {
+    border: 0;
 }
-.gallery-items a img{
+.gallery-items .btn-modal:active, .gallery-items .btn-modal:focus {
+    outline: none;
+}
+.gallery-items .btn-modal img{
     width: 90%;
     vertical-align: top;
     height: 300px;
     object-fit: cover;
     transition: transform 0.5s;
 }
-.gallery-items a:hover img{
-    filter: blur(2px);
-    transform: rotate(10deg) scale(1.3);
-}
+/*  FIN NEW BTN MODAL */
 
-.modal-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 10000;
+
+/* NEW MODAL */
+.modal .modal-dialog{
+    width: 100% !important;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transform: scale(0);
-    background-color: rgba(0, 0, 0, .5);
-    transition: transform .3s ease-in-out;
+    margin-top: 70px;
 }
-.modal-box img{
-    width: 75vw;
-    max-height: 80vh;
-}
-.modal-box:target{
-    transform: scale(1);
-}
-.close {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    cursor: pointer;
-    color: #ffffff;
-    text-decoration: none;
-}
-.close i{
-    font-size: 30px;
-}
-.anterior, .siguiente{
-    display: block;
-    color: #fff;
-    font-size: 30px;
-    line-height: 30px;
-    text-decoration: none;
+.modal .modal-dialog .modal-content {
+    width: 600px;
+    border: 0;
     text-align: center;
+    background-color: transparent !important;
 }
-.anterior{
-    margin-right: 15px;
+.modal .modal-dialog .modal-content a{
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 15px;
+    text-decoration: none;
+    z-index: 999;
 }
-.siguiente{
-    margin-left: 15px;
-}
+/* FIN NEW MODAL */
+
 /* #### Fin Section portfolio #### */
 /* ############################### */
 
@@ -325,8 +300,8 @@ address span{
     display: block;
 }
 address span:last-child{
-    margin: 0 0 0px 0;
-    display: block;
+    margin: 0;
+    display: flex;
 }
 address span i{
     margin-right: 10px;
@@ -386,6 +361,9 @@ footer {
 .red-social .icon a i{
     color: #ffffff;
     font-size: 20px;
+}
+.red-social .icon a i.fa-github{
+    font-size: 25px;
 }
 /* #### Fin Section Footer #### */
 /* ############################ */

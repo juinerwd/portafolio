@@ -1,10 +1,39 @@
 const botonNav = document.getElementById("mostrarMenu");
 const cerrarNav = document.querySelector(".btnclose");
+// const image1 = document.getElementById('image1');
+// const modal1 = document.getElementsById("img1");
+
 botonNav.addEventListener('click', function(){
   document.getElementById("Navegacion").classList.toggle('mostrarNav');
 });
 cerrarNav.addEventListener('click', function(){
   document.getElementById("Navegacion").classList.toggle('mostrarNav');
+});
+
+// image1.addEventListener('click', function(){
+//   modal1.sho
+// });
+
+$(document).ready(function(){
+  $("#image1").click(function(){
+    $("#img1").modal();
+  });
+  $("#image2").click(function(){
+    $("#img2").modal();
+  });
+  $("#image3").click(function(){
+    $("#img3").modal();
+  });
+  $("#image4").click(function(){
+    $("#img4").modal();
+  });
+  $("#image5").click(function(){
+    $("#img5").modal();
+  });
+  $("#image6").click(function(){
+    $("#img6").modal();
+  });
+  // sectionContact
 });
 
 window.onscroll = function() {

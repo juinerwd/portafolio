@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="btn-submit">
-                            <a class="btn btn-primary btn-contrato" href="#">Contratarme</a>
+                            <a class="btn btn-primary btn-contrato" href="#contact">Contratarme</a>
                         </div>
                     </div>
                 </div>
@@ -111,87 +111,88 @@
                         <h2>Mi Portafolio</h2>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <nav class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Todo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Item 1</a>
-                            </li>
-                        </nav>
-                    </div>
-                </div> -->
                 <div class="row">
                     <div class="col-12">
                         <div class="gallery-portfolio">
                             <div class="gallery-items">
-                                <a href="#img1">
-                                    <img class="gallery-img" src="./assets/img/portafolio/1.jpg" alt="" srcset="">
-                                </a>
+                                <button type="button" class="btn-modal" id="image1">
+                                    <img class="gallery-img" src="./assets/img/portafolio/picatoon.png" alt="" srcset="">
+                                </button>
                             </div>
                             <div class="gallery-items">
-                                <a href="#img2">
+                                <button type="button" class="btn-modal" id="image2">
                                     <img class="gallery-img" src="./assets/img/portafolio/2.jpg" alt="" srcset="">
-                                </a>
+                                </button>
                             </div>
                             <div class="gallery-items">
-                                <a href="#img3">
+                                <button type="button" class="btn-modal" id="image3">
                                     <img class="gallery-img" src="./assets/img/portafolio/3.jpg" alt="" srcset="">
-                                </a>
+                                </button>
                             </div>
                             <div class="gallery-items">
-                                <a href="#img4">
+                                <button type="button" class="btn-modal" id="image4">
                                     <img class="gallery-img" src="./assets/img/portafolio/4.jpg" alt="" srcset="">
-                                </a>
+                                </button>
                             </div>
                             <div class="gallery-items">
-                                <a href="#img5">
+                                <button type="button" class="btn-modal" id="image5">
                                     <img class="gallery-img" src="./assets/img/portafolio/5.jpg" alt="" srcset="">
-                                </a>
+                                </button>
                             </div>
                             <div class="gallery-items">
-                                <a href="#img6">
+                                <button type="button" class="btn-modal" id="image6">
                                     <img class="gallery-img" src="./assets/img/portafolio/5.jpg" alt="" srcset="">
-                                </a>
+                                </button>
                             </div>
                         </div>
-                        <div class="modal-box" id="img1">
-                            <a class="anterior" href="#img6"><i class="fas fa-chevron-left"></i></a>
-                            <img src="./assets/img/portafolio/1.jpg" alt="">
-                            <a class="siguiente" href="#img2"><i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="close"><i class="fas fa-times"></i></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="img1" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <img src="./assets/img/portafolio/picatoon.png" alt="">
+                                    <a href="https://menu-pi.vercel.app/" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="modal-box" id="img2">
-                            <a class="anterior" href="#img1"><i class="fas fa-chevron-left"></i></a>
-                            <img src="./assets/img/portafolio/2.jpg" alt="">
-                            <a class="siguiente" href="#img3"><i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="close"><i class="fas fa-times"></i></a>
+                        <div class="modal fade" id="img2" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <img src="./assets/img/portafolio/2.jpg" alt="">
+                                    <a href="#" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="modal-box" id="img3">
-                            <a class="anterior" href="#img2"><i class="fas fa-chevron-left"></i></a>
-                            <img src="./assets/img/portafolio/3.jpg" alt="">
-                            <a class="siguiente" href="#img4"><i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="close"><i class="fas fa-times"></i></a>
+                        <div class="modal fade" id="img3" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <img src="./assets/img/portafolio/3.jpg" alt="">
+                                    <a href="#" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="modal-box" id="img4">
-                            <a class="anterior" href="#img3"><i class="fas fa-chevron-left"></i></a>
-                            <img src="./assets/img/portafolio/4.jpg" alt="">
-                            <a class="siguiente" href="#img5"><i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="close"><i class="fas fa-times"></i></a>
+                        <div class="modal fade" id="img4" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <img src="./assets/img/portafolio/4.jpg" alt="">
+                                    <a href="#" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="modal-box" id="img5">
-                            <a class="anterior" href="#img4"><i class="fas fa-chevron-left"></i></a>
-                            <img src="./assets/img/portafolio/5.jpg" alt="">
-                            <a class="siguiente" href="#img6"><i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="close"><i class="fas fa-times"></i></a>
+                        <div class="modal fade" id="img5" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <img src="./assets/img/portafolio/5.jpg" alt="">
+                                    <a href="#" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="modal-box" id="img6">
-                            <a class="anterior" href="#img5"><i class="fas fa-chevron-left"></i></a>
-                            <img src="./assets/img/portafolio/5.jpg" alt="">
-                            <a class="siguiente" href="#img1"><i class="fas fa-chevron-right"></i></a>
-                            <a href="#" class="close"><i class="fas fa-times"></i></a>
+                        <div class="modal fade" id="img6" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <img src="./assets/img/portafolio/5.jpg" alt="">
+                                    <a href="#" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -209,9 +210,9 @@
                     <div class="col-sm-12">
                         <div class="carousel" id="slick-list">
                             <div class="carousel-contenedor">
-                                <button aria-label="Anterior" class="carousel-anterior">
+                                <!-- <button aria-label="Anterior" class="carousel-anterior">
                                     <i class="fas fa-chevron-left"></i>
-                                </button>
+                                </button> -->
                                 <div class="carousel-lista">
                                     <div class="carousel-elemento">
                                         <div class="card-services">
@@ -219,24 +220,6 @@
                                                 <i class="fal fa-phone-laptop"></i>
                                                 <h5>Diseño Web</h5>
                                                 <p>Planificación, diseño, implementación y mantenimiento de sitios web</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-elemento">
-                                        <div class="card-services">
-                                            <div>
-                                                <i class="fas fa-mobile-alt"></i>
-                                                <h5>Desarrollo de App</h5>
-                                                <p>Desarrollo de aplicaciones móviles para tu producto o servicio</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-elemento">
-                                        <div class="card-services">
-                                            <div>
-                                                <i class="fas fa-camera"></i>
-                                                <h5>Fotografía</h5>
-                                                <p>Servicio de fotografía para captar tus mejores momentos</p>
                                             </div>
                                         </div>
                                     </div>
@@ -258,19 +241,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-elemento">
-                                        <div class="card-services">
-                                            <div>
-                                                <i class="fal fa-phone-laptop"></i>
-                                                <h5>Diseño Web</h5>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                                <button aria-label="Siguiente" class="carousel-siguiente">
+                                <!-- <button aria-label="Siguiente" class="carousel-siguiente">
                                     <i class="fas fa-chevron-right"></i>
-                                </button>
+                                </button> -->
                             </div>
                             <div role="tablist" class="carousel-indicadores mt-3"></div>
                         </div>
@@ -290,17 +264,15 @@
                     <div class="col-sm-12 col-md-5 d-flex align-items-center">
                         <address>
                             <span>
-                                <i class="fa fa-map-marker fa-lg"></i>100 Buenaventura, Colombia
+                                <i class="fa fa-map-marker fa-lg"></i>Buenaventura, Colombia
                             </span>
                             <span>
                                 <i class="fa fa-phone fa-lg"></i>(+57) 321 564 6453
                             </span>
-                            <span>
-                                <i class="fa fa-envelope fa-lg"></i><a href="mailto:juiner.info@gmail.com">juiner.info@gmail.com</a>
+                            <span class="email-contact">
+                                <i class="fa fa-envelope fa-lg"></i>
+                                <p>juiner.info@gmail.com</p>
                             </span>
-                            <!-- <span>
-                                <i class="fa fa-file-pdf fa-lg"></i><a href="#">Download Resume</a>
-                            </span> -->
                         </address>
                     </div>
                     <div class="col-sm12 col-md-7">
@@ -340,7 +312,7 @@
                 </div>
                 <div class="col-sm-12 col-lg-6 d-flex justify-content-center justify-content-lg-center align-items-center mt-3 mb-3">
                     <div>
-                        <p class="mb-0">© Copyright 2020 - Profesión por JuinerWD</p>
+                        <p class="mb-0">© Copyright 2021 - Profesión por JuinerWD</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end align-items-center">
@@ -350,11 +322,11 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
-                        <!-- <div class="icon icon-facebook">
-                            <a href="#" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
+                        <div class="icon icon-github">
+                            <a href="https://github.com/juinerwd" target="_blank">
+                                <i class="fab fa-github"></i>
                             </a>
-                        </div> -->
+                        </div>
                         <div class="icon icon-instagram">
                             <a href="https://www.instagram.com/juinerwd/" target="_blank">
                                 <i class="fab fa-instagram"></i>
@@ -400,6 +372,7 @@
             $sendMessage.setAttribute('href',`mailto:juiner.info@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`);
             $sendMessage.click();
         }
+
     </script>
 </body>
 </html>
